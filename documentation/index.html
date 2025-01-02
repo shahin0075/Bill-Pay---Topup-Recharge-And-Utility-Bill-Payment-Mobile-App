@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" type="image/x-icon" href="./img/icon/fav.png" />
+      <title>Documentation</title>
+      <!-- bootstrap 5 -->
+      <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+      <!-- font awesome 6 -->
+      <link rel="stylesheet" href="./assets/fontawesome/all.min.css" />
+      <link rel="stylesheet" href="./assets/fontawesome/fontawesome.min.css" />
+      <!-- custom css -->
+      <link rel="stylesheet" href="./css/style.css" />
+   </head>
+   <body class="">
+      <div class="dashboard-wrapper">
+         <!-- sidebar -->
+         <div id="sidebar" class="">
+            <div class="sidebar-top">
+               <a class="navbar-brand" href="index.html"> <img src="./img/icon/logo.png" alt="" /></a>
+               <button class="sidebar-toggler d-lg-none" onclick="toggleSideMenu()">
+                  <i class="fal fa-times"></i>
+               </button>
+            </div>
+            <ul class="main">
+               <li>
+                  <a class="active" href="#introduction"><i class="fa-light fa-grid-2"></i>Introduction</a>
+               </li>
+               <li>
+                  <a href="#requirements"><i class="fa-light fa-file-code"></i>Requirements</a>
+               </li>
+               <li>
+                  <a href="#installation"><i class="fa-light fa-square-code"></i>Installation</a>
+               </li>
+               <li>
+                  <a href="#folderStructure"><i class="fa-light fa-folders"></i>Folder Structure</a>
+               </li>
+               <li>
+                  <a href="#screens"><i class="fa-light fa-list-dropdown"></i>Screens</a>
+               </li>
+               <li>
+                  <a href="#setupApplication"><i class="fa-light fa-list-timeline"></i>Setup Application</a>
+               </li>
+               <li>
+                  <a href="#publishApp"><i class="fa-light fa-file-contract"></i>Publish App</a>
+               </li>
+            </ul>
+         </div>
+
+         <!-- content -->
+         <div id="content">
+            <div class="overlay">
+               <!-- main -->
+               <div class="container">
+                  <button class="call-side-bar d-lg-none" onclick="toggleSideMenu()">
+                     <i class="fal fa-bars"></i>
+                  </button>
+                  <div class="main row">
+                     <div class="col-12">
+                        <!-- INTRODUCTION -->
+                        <div id="introduction" class="mt-5">
+                           <h2>Bill Pay - Topup, Recharge And Utility Bill Payment  Mobile App</h2>
+                           <p>
+				Elevate your business to new heights with the BillPay Mobile App, designed to seamlessly integrate with our cutting-edge Bill Payment Web Application. Empower your customers to take control of their bills anytime, anywhere, with the convenience of a user-friendly mobile interface.
+
+                           </p>
+
+                           <div class="mt-3">
+                              <h6>Date Created: 3rd January 2024</h6>
+                              <h6>Author: Bug Finder</h6>
+                              <h6>Contact Email: <a class="text-primary" href="mailto:bugfinder.me@gmail.com">bugfinder.me@gmail.com</a></h6>
+                           </div>
+                        </div>
+                        <!-- REQUIREMENTS -->
+                        <div id="requirements" class="mt-5 pt-5">
+                           <div class="heading">
+                              <h3>Requirements</h3>
+                           </div>
+                           <p>Download and install Any one from these IDE(Android studio, Vs Code) on your computer.</p>
+                           <ul>
+                              <li>Source Android Studio: <a class="text-primary" href="">https://developer.android.com/studio</a></li>
+                              <li>Source VS Code: <a class="text-primary" href="">https://code.visualstudio.com/download</a></li>
+                           </ul>
+                           <p>Setup Flutter and Dart SDK in your computer if you want to modify the source code</p>
+                           <ul>
+                              <li>Source: <a class="text-primary" href="">https://docs.flutter.dev/get-started/install</a></li>
+                           </ul>
+                           <p>Must installed Flutter and dart plugin on your IDE</p>
+                        </div>
+                        <!-- INSTALLATION -->
+                        <div id="installation" class="mt-5 pt-5">
+                           <div class="heading">
+                              <h3>Installation</h3>
+                           </div>
+                           <ol>
+                              <li>Unzip the source code and open it in your IDE.</li>
+                              <li>On your IDE find for pubspecs.yaml file then click on <b>Get packages Icon</b> on top right side your IDE.</li>
+                              <li>Please make sure your flutter and dart SDK updated.</li>
+                              <li>Open an emulator or connect a real device and then click on <b>Run Button</b> for compile the project.</li>
+                           </ol>
+                           <div class="screenshot">
+                              <img class="img-fluid rounded-3" src="./img/screenshots/pubspec.png" alt="" />
+                           </div>
+                        </div>
+                        <!-- FOLDER STRUCTURE -->
+                        <div id="folderStructure" class="mt-5 pt-5">
+                           <div class="heading">
+                              <h3>Folder Structure</h3>
+                              <p>All you need to follow the lib(Library) Folder for any logical and UI changes in this project.</p>
+                           </div>
+                           <ul>
+                              <li>
+                                 <b><i class="fal fa-folder"></i> Controller Folder =></b> All of the logic implemented here.
+                              </li>
+                              <li>
+                                 <b><i class="fal fa-folder"></i> Data Folder =></b> All of the static data which isn't comes from server.
+                              </li>
+                              <li>
+                                 <b><i class="fal fa-folder"></i> Models Folder =></b> All of the class types defined here.
+                              </li>
+                              <li>
+                                 <b><i class="fal fa-folder"></i> Theme Folder =></b> Managed app thme here.
+                              </li>
+                              <li>
+                                 <b><i class="fal fa-folder"></i> Utils Folder =></b> All the strings and colors defined here
+                              </li>
+                              <li>
+                                 <b><i class="fal fa-folder"></i> Screens Folder =></b> All of the screen here.
+                              </li>
+                              <li>
+                                 <b><i class="fal fa-folder"></i> Widgets Folder =></b> All of the component here.
+                              </li>
+                           </ul>
+                           <div class="screenshot">
+                              <img class="img-fluid rounded-3" src="./img/screenshots/folder_structure.png" alt="" />
+                           </div>
+                        </div>
+                        <!-- SCREENS -->
+                        <div id="screens" class="mt-5 pt-5">
+                           <div class="heading">
+                              <h3>Screens</h3>
+                           </div>
+                           <ul>
+                              <li><i class="fal fa-mobile"></i> Splash Screen</li>
+                              <li><i class="fal fa-mobile"></i> Onboarding Screen</li>
+                              <li><i class="fal fa-mobile"></i> Welcome Screen</li>
+                              <li><i class="fal fa-mobile"></i> Sign Up Screen</li>
+                              <li><i class="fal fa-mobile"></i> Sign In Screen</li>
+                              <li><i class="fal fa-mobile"></i> Passoword Recovery Screen</li>
+                              <li><i class="fal fa-mobile"></i> Home screen</li>
+                              <li><i class="fal fa-mobile"></i> Bill Pay Screen</li>
+                              <li><i class="fal fa-mobile"></i> Bill Pay Form Screen</li>
+                              <li><i class="fal fa-mobile"></i> Payment Screen</li>
+                              <li><i class="fal fa-mobile"></i> Card Payment Screen</li>
+                              <li><i class="fal fa-mobile"></i> Pay List Screen</li>
+                              <li><i class="fal fa-mobile"></i> Bill Request Screen</li>
+                              <li><i class="fal fa-mobile"></i> Bill Details Screen</li>
+                              <li><i class="fal fa-mobile"></i> Transaction Screen</li>
+                              <li><i class="fal fa-mobile"></i> Notification Screen</li>
+                              <li><i class="fal fa-mobile"></i> Notification Permission Screen</li>
+                              <li><i class="fal fa-mobile"></i> Support Ticket Screen</li>
+                              <li><i class="fal fa-mobile"></i> Create Ticket Screen</li>
+                              <li><i class="fal fa-mobile"></i> Support Conversation Screen</li>
+                              <li><i class="fal fa-mobile"></i> Profile Setting Screen</li>
+                              <li><i class="fal fa-mobile"></i> Edit Profile Screen</li>
+                              <li><i class="fal fa-mobile"></i> Change Password Screen</li>
+                              <li><i class="fal fa-mobile"></i> Two Factor Authentication Screen</li>
+                              <li><i class="fal fa-mobile"></i> Identity Verification Screen</li>
+                              <li><i class="fal fa-mobile"></i> Email Verification Screen</li>
+                              <li><i class="fal fa-mobile"></i> SMS Verification Screen</li>
+                           </ul>
+                        </div>
+                        <!-- SETUP APPLICATION -->
+                        <div id="setupApplication" class="mt-5 pt-5">
+                           <div class="heading">
+                              <h3>Setup Application</h3>
+                           </div>
+                           <div class="mb-5">
+                              <h5>To Change API Base Url: Open lib/utils/app_constants.dart</h5>
+                              <div class="screenshot">
+                                 <img class="img-fluid rounded-3" src="./img/screenshots/app_constants.png" alt="" />
+                              </div>
+                           </div>
+
+                           <div class="mb-5">
+                              <h5>To Change App Primary color: Open lib/utils/app_colors.dart</h5>
+                              <div class="screenshot">
+                                 <img class="img-fluid rounded-3" src="./img/screenshots/app_colors.png" alt="" />
+                              </div>
+                           </div>
+
+                           <div class="mb-5">
+                              <h5>Or You can do it from admin panel also</h5>
+                              <div class="screenshot">
+                                 <img class="img-fluid rounded-3" src="./img/screenshots/app_color_admin_panel.png" alt="" />
+                              </div>
+                           </div>
+
+                           <div>
+                              <h5>
+                                 For change the app name please follow:
+                                 <a class="text-primary" href=" https://pub.dev/packages/flutter_launcher_icons">https://pub.dev/packages/rename_app</a>
+                              </h5>
+                           </div>
+                           <div>
+                              <h5>
+                                 For change the app icon please follow:
+                                 <a href=" https://pub.dev/packages/flutter_launcher_icons" class="text-primary"> https://pub.dev/packages/flutter_launcher_icons</a>
+                              </h5>
+                           </div>
+                           <div>
+                              <h5>
+                                 For change the app package name please follow:
+                                 <a href="https://pub.dev/packages/change_app_package_name" class="text-primary">https://pub.dev/packages/change_app_package_name</a>
+                              </h5>
+                           </div>
+                        </div>
+                        <!-- PUBLISH APP -->
+                        <div id="publishApp" class="mt-5 pt-5">
+                           <div class="heading">
+                              <h3>Publish APP</h3>
+                           </div>
+                           <h5>1. Android</h5>
+                           <p>Follow the guidelines publish the app to Play Store.</p>
+                           <p><b>PlayStore:</b> <a class="text-primary" href="">https://flutter.dev/docs/deployment/android</a></p>
+                           <h5>2. IOS</h5>
+                           <p>Follow the guidelines publish the app to AppStore.</p>
+                           <p><b>AppStore:</b> <a class="text-primary" href="">https://flutter.dev/docs/deployment/ios</a></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- bootstrap -->
+      <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+      <!-- jquery cdn -->
+      <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
+      <!-- custom script -->
+      <script src="./js/script.js"></script>
+   </body>
+</html>
